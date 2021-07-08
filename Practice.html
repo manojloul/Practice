@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Practice</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<nav><div class="intro1">
+    <img src="Student Self Help Desk_Logo.png" height="50px" width="50px">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Welcome to MANIT Student Self Help Desk&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <div id="clock">8:10:45</div>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+    </div></nav>
+<nav><div class="intro2">
+
+        <a href="HomePage.html" target="_parent" >Home</a>
+        <a href="Books.html" target="_parent">Books</a>
+        <a href="Notes.html" target="_parent">Notes</a>
+        <a href="Teachers.html" target="_parent">Teachers</a>
+        <a href="TypingTest.html" target="_parent">TYPO</a>
+        <a href="Practice.html" target="_parent">Practice</a>
+        <a href="Quiz.html" target="_parent">Quiz</a>
+        <a href="Documents.html" target="_parent">Docs</a>
+    </div>
+    </nav>
+<div class="even">
+<h1 align="center" color="maroon"><u>Interview Questions</u></h1>
+<ol>
+    <li>Give an SQL Query to fetch records that are present in one table but not in another table.</li>
+    <li>Give an SQL query to fetch all the employees who are not working on any project.</li>
+    <li>Give an SQL query to fetch all the Employees from EmployeeDetails who joined in the Year 2020.</li>
+    <li>Give an SQL query to fetch all employees from EmployeeDetails who have a salary record in EmployeeSalary.</li>
+    <li>Give an SQL query to fetch project-wise count of employees.</li>
+    <li>Give a code to check a String is palindrome or not.</li>
+    <li>Give a method which will remove any given character from a String.</li>
+    <li>Give a code to print all permutation of String both iterative and Recursive way</li>
+    <li>Give a function to find out longest palindrome in a given string.</li>
+    <li>Find how to find the first non repeated character of a given String.</li>
+    <li>Find how to count the occurrence of a given character in a String</li>
+    <li>Give a code to check if two String are Anagram.</li> 
+    <li>Give  a code to how to convert numeric String to int in Java</li>
+    <li>What is the difference between String, StringBuilder, and StringBuffer in Java.</li>
+    <li>Why String is final in Java.</li>
+    <li>Why Char array is preferred over String for storing password.</li> 
+    <li>In an array 1-100 numbers are stored, one number is missing how do you find it.</li>
+    <li>How do you find the second highest number in an integer array.</li>
+    <li>How to find all pairs in an array of integers whose sum is equal to the given number.</li> 
+    <li>How to remove duplicate elements from the array in Java.</li>
+    <li>How to find the largest and smallest number in an array.</li>
+    <li>How to find the top two maximum number in an array.</li>
+    <li>How do you find middle element of a linked list in a single pass.</li>
+    <li>How do you find if there is any loop in a singly linked list? How do you find the start of the loop.</li>
+    <li>How do you reverse a singly linked list.</li>
+    <li>What is the difference between a linked list and array data structure.</li>
+    <br>
+</ol></div>
+<footer><b>Copyright@MANIT Self Help Desk<br/>Mr. Manoj Loul-202120027<br/>Mr. Abishekh Jha-202120042<br/>Ms. Pari Jain-202120124</b></footer>
+</body>
+</html>
